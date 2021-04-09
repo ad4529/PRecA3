@@ -1,0 +1,66 @@
+LgEval Evaluation Summary
+Fri Apr  9 14:15:18 2021
+
+Output File Directory:  AC-Oracle/
+Ground Truth Directory: all_lg_GT/
+
+****  PRIMITIVES   **************************************************************
+
+  Directed   Rate(%)     Total   Correct    Errors    SegErr     ClErr    RelErr
+---------------------------------------------------------------------------------
+     Nodes     94.44    121306    114556      6750
+     Edges     98.25   2432832   2390266     42566     37766      4800         0
+
+     Total     98.07   2554138   2504822     49316
+
+
+Undirected   Rate(%)     Total   Correct    Errors    SegErr     ClErr    RelErr
+---------------------------------------------------------------------------------
+     Nodes     94.44    121306    114556      6750
+Node Pairs     98.25   1216416   1195133     21283     18883      2400         0
+
+     Total     97.90   1337722   1309689     28033
+
+     SegErr: merge/split   ClErr: valid merge class error   RelErr: relation error
+
+
+****  OBJECTS   **************************************************************************
+
+           Recall(%)   Prec(%) 2RP/(R+P)   Targets   Correct  FalseNeg *Detected *FalsePos
+------------------------------------------------------------------------------------------
+   Objects     85.88     85.80     85.84     85781     73666     12115     85861     12195
+ + Classes     85.85     85.77     85.81     85781     73641     12140     85861     12220
+ Class/Det     99.97                         73666     73641
+
+ Relations    100.00    100.00    100.00         0         0         0         0         0
+ + Classes    100.00    100.00    100.00         0         0         0         0         0
+ Class/Det   (Empty)                             0         0
+
+     2RP/(R+P): harmonic mean (f-measure) for (R)ecall and (P)recision
+     Class/Det: (correct detection and classification) / correct detection
+
+
+****  FILES  ***************************************
+
+             Rate(%)     Total   Correct    Errors
+---------------------------------------------------
+   Objects     65.83      8834      5815      3019
+ + Classes     65.83      8834      5815      3019
+ Class/Det    100.00      5815      5815          
+
+ Relations    100.00      8834      8834         0
+ + Classes    100.00      8834      8834         0
+ Class/Det    100.00      8834      8834          
+
+ Structure     65.83      8834      5815      3019
+ + Classes     65.83      8834      5815      3019    *Final
+ Class/Det    100.00      5815      5815          
+
+
+****  LABEL ERROR HISTOGRAM (Dir. Edges, D_B)  ****
+
+                   0         1         2         3         4         5        >5
+----------------------------------------------------------------------------------
+Num. Files      5815         0        14         0        73       606      2326
+Cum. Files      5815      5815      5829      5829      5902      6508      8834
+
