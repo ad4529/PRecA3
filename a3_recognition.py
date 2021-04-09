@@ -2,6 +2,7 @@ import os
 import pickle
 from sklearn.decomposition import PCA
 import numpy as np
+from a3 import extract_traces
 
 SYMBOLS = ['(', '-', ')', 'n', '=', 'i', '\\sum', 'S', '1', 'r', '\\theta', '2',
            '\\pi', '8', 'd', 'a', '4', 'c', 'b', '+', '3', '7', 'y', '0', 'x',
@@ -61,3 +62,12 @@ def predict(model, dataset, X=None):
     for i, ui in dataset.uis_dict.items():
         ui2preds[ui] = [SYMBOLS[token] for token in topk_classes[i]]
     return ui2preds
+
+
+def main():
+    ui2id2tr, ui2clslines, ui2id2cls = extract_traces('data/data/inkml')
+
+
+
+if __name__ == '__main__':
+    main()

@@ -278,6 +278,5 @@ def main():
     write_lg(ui2lginfo_ac_oracle, 'AC-Oracle')
 
 
-
 if __name__ == '__main__':
     main()
