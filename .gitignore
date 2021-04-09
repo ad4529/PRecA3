@@ -4,8 +4,8 @@ confHist_outputs/*
 data/*
 Figures/*
 K-Oracle/*
-Results_K-Oracle/*
 Results_AC-Oracle/*
+Results_K-Oracle/*
 Results_S_Oracle/*
 rf_saved_pkls/*
 S_Oracle/*
